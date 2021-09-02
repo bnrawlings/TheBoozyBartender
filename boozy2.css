@@ -1,0 +1,148 @@
+body{
+    background-color: #e3dcdf;
+    background-image: url(https://images.unsplash.com/photo-1487147264018-f937fba0c817?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1234&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Rampart One';
+}
+.navbar {
+    overflow: hidden;
+    /* background-color: #5c4d7d; */
+    border-radius: 5px;
+    border-bottom: double whitesmoke;
+  }
+  .navbar a {
+    float: left;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  .dropdown .dropbtn {
+    font-size: 17px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color:#723c70;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+.mainContain{
+    display: grid;
+    grid-template: repeat(4,1fr) / repeat(5,1fr);
+    gap: 2rem; 
+    margin: 100px;
+    padding: 10px;
+}
+
+img{
+    width: 200px;
+    border: solid snow;
+}
+img:hover {
+    width: 350px;
+    height: 450px
+}
+h3{
+    font-family: 'Rampart One';
+    border-bottom: double snow;   
+}  
+.searBtn{
+    background-color: #723c70;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+.searchField{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 15px;
+    font-family: 'Rampart One';
+}
+h2{
+    display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      color:white;
+      font-family: 'Rampart One';
+      font-size: 40px;
+      background: -webkit-linear-gradient(#ac46a1, #ff0a54);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      
+}
+@media screen and (max-width:1029px){
+    .mainContain{
+        display: grid;
+        grid-template: repeat(2,1fr) / repeat(3,1fr);
+        gap: 2rem; 
+        margin: 50px;
+        padding: 10px;
+    }
+    body{
+        background-color: palegoldenrod;
+        background-image: url(https://images.unsplash.com/photo-1516074269859-f54ee0d65fa7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2467&q=80);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Rampart One';
+        
+    }
+
+}
+@media screen and (max-width:479px){
+    .mainContain{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        gap: 1rem;
+        margin: 0px;
+    }
+    body{
+        background-color: palegoldenrod;
+        background-image: url(https://images.unsplash.com/photo-1516074269859-f54ee0d65fa7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2467&q=80);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Rampart One';
+        
+    }
+    h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+}
